@@ -128,10 +128,10 @@ void display_stack()
 		return;
 	}
 	cout << endl;
-    cout << "\nData Berat Badan Mahasiswa Informatika : \n";
+    	cout << "\nData Berat Badan Mahasiswa Informatika : \n";
 	cout << "====================================================================================================\n";
-    cout << "|     NPM     |     NAMA      | JENIS KELAMIN | BERAT | TINGGI |  BMI  |   STATUS   | BERAT IDEAL  |\n";
-    cout << "====================================================================================================\n";
+    	cout << "|     NPM     |     NAMA      | JENIS KELAMIN | BERAT | TINGGI |  BMI  |   STATUS   | BERAT IDEAL  |\n";
+   	cout << "====================================================================================================\n";
 
 	struct node *temp=top;
 	while(temp!=NULL)
@@ -148,7 +148,7 @@ void display_stack()
 		temp=temp->next;
 		cout << "\n====================================================================================================\n";
 	}
-    cout << "\nTekan Enter Untuk Melanjutkan\n";
+    	cout << "\nTekan Enter Untuk Melanjutkan\n";
 	getch();
 }
 
@@ -161,10 +161,10 @@ int main()
 
 	while(1)
 	{
-	    system("cls");
-	    cout << "|===================================|\n";
+	    	system("cls");
+	    	cout << "|===================================|\n";
 		cout << "|======= PROGRAM BERAT BADAN =======|\n";
-        cout << "|====== MAHASISWA INFORMATIKA ======|\n";
+        	cout << "|====== MAHASISWA INFORMATIKA ======|\n";
 		cout << "|===================================|\n";
 		cout << "| [1] Input Data                    |\n";
 		cout << "| [2] Hapus Data Top                |\n";
@@ -189,7 +189,7 @@ int main()
 				cout << "Masukkan Tinggi Badan  (CM)  : ";
 				cin >> input_tinggi;
 				push(input_npm,input_nama,input_jenis,input_berat,input_tinggi);
-                system("pause");
+                		system("pause");
 				break;
 			case(2):
 				pop();
